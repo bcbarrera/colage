@@ -61,11 +61,12 @@ body{
     width: 100%;
     top: 0;
     left: 0;
-    transform: translateX(-200%);
-    background: rgba(0, 0, 0, 0.5);
+    transform: translateX(-100%);
+    background: rgba(0, 0, 0, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform .4s ease-in;
 
 }
 
