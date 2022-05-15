@@ -20,7 +20,7 @@ body{
     "img4 img4 img3 img3 img3"
     "img6 img6 img6 img5 img5"
     "img6 img6 img6 img5 img5";
-
+    gap: 3px;
 }
 
 .img{
@@ -76,9 +76,15 @@ body{
 
 .img-show{
     height: 80%;
+    transform: scale(0);
     display: block;
     object-fit: cover;
+    transition: transform .2s .4s;
 
+}
+
+.show{
+    transform: scale(1);
 }
 
 .copy{
@@ -94,4 +100,19 @@ body{
     right: 10px;
     font-size: 40px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 700 px){
+    .img-show{
+        width: 90%;
+    }
+
+    .copy{
+        bottom: 20px;
+    }
+
+    .bx.bx-x{
+        top: 10px;
+        font-size: 25px;
+    }
 }
